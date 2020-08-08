@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=raleway:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 600px) {
+  :root {
+    font-size: 10px;
+  }
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-user-select: none;
+  font-size: 1rem;
+  font-family: "Proxima Nova", "Montserrat";
+  -webkit-font-smoothing: antialiased;
+}
+
+body::-webkit-scrollbar {
+  width: 0.45rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #0095dd;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 3vmax;
+}
+
+h2,
+h3 {
+  text-transform: capitalize;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+p {
+  color: gray;
+  line-height: 1.6;
+  font-family: "Helvetica Neue WGL", "Helvetica Neue";
+}
+
+p::first-letter {
+  text-transform: uppercase;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input,
+button,
+textarea {
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+}
+
+button,
+select,
+input[type="submit"] {
+  cursor: pointer;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  color: #bec6cc, #444451;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+hr {
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  height: 3px;
+}
+
+@media (max-width: 600px) {
+  hr {
+    height: 3px !important;
+  }
+}
+
+:focus {
+  outline: none !important;
+}
+
+.container {
+  width: 1170px;
+  width: 92%;
+  width: 96.55vw;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media (max-width: 476px) {
+  .container {
+    width: 100% !important;
+  }
+}
+
+body {
+  background-color: #0095dd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+h1 {
+  color: #fff;
+  font-size: 3.5vmax;
+}
+
+canvas {
+  background: #f0f0f0;
+  display: block;
+  border-radius: 5px;
+}
+
+.btn {
+  padding: 0.625rem 1.25rem;
+  background: #000;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #222;
+}
+
+.btn:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+.rules-btn {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.rules {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #333;
+  color: #fff;
+  min-height: 100vh;
+  width: 30vw;
+  padding: 1.25rem;
+  line-height: 1.5;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+}
+
+.rules.show {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.rules h2 {
+  color: #0095dd;
+  font-family: "raleway";
+}
+
+.rules p {
+  color: inherit;
+  font-size: 1.2rem;
+}
+
+.rules button {
+  width: 50%;
+  display: block;
+  margin: 2rem auto 0;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  font-weight: 600;
+  font-size: 1.095rem;
+  background-color: #0095dd;
+  font-family: cursive;
+}
+/*# sourceMappingURL=style.css.map */
